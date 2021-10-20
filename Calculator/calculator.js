@@ -1,3 +1,5 @@
+// portions of this code were found or provided by Code Explained
+
 //select elements
 const input_element = document.querySelector('.input');
 const output_operation_element = document.querySelector('.operation .value');
@@ -14,6 +16,7 @@ let data = {
 
 let ans = 0;
 
+//inspired by Code Explained
 let calculator_buttons = [
     {
         name : "rad",
@@ -382,6 +385,7 @@ function calculator(button){
     updateOutputOperation( data.operation.join('') );
 }
 
+//inspired by Code Explained
 // factorial number getter
 function factorialNumberGetter(formula, FACTORIAL_SEARCH_RESULT){
     let numbers = [];
@@ -437,6 +441,7 @@ function factorialNumberGetter(formula, FACTORIAL_SEARCH_RESULT){
     return numbers;
 }
 
+//inspired by Code Explained
 // power base getter
 function powerBaseGetter(formula, POWER_SEARCH_RESULT){
     let powers_bases = [];
@@ -503,6 +508,7 @@ function factorial(number){
     return result;
 }
 
+//found by Code Explained
 // GAMMA FUNCTINON
 function gamma(n) {  // accurate to about 15 decimal places
     //some magic constants 
